@@ -1,0 +1,44 @@
+# 该订阅适用于定时签到脚本的Cookie获取.集成: 优麦医生, 无忧行, 京东, 爱奇艺, 网易云音乐, V2EX, 彩云天气. 您可以在使用后手动将其禁用，以免产生不必要的MITM.
+
+
+hostname = api.umer.com.cn, app*.jegotrip.com.cn, task.jegotrip.com.cn, api.m.jd.com, ifac*.iqiyi.com, music.163.com, *.v2ex.com, weather-data.apple.com
+
+# > 优麦医生
+# 打开优麦医生app，通知提示获取Cookie成功
+https?:\/\/api\.umer\.com\.cn\/.*getCurrentUmerSign url script-request-header https://ooxx.be/js/umer.js
+
+# > 无忧行
+# 1.打开无忧行App, 通知成功写入「 AccountID | UserID | Mobile | Token 」.
+# 2.依次点击"我的" 👉 "任务中心". 通知成功写入「 TaskID 」.
+https?:\/\/app.*\.jegotrip\.com\.cn\/.*getUser\? url script-response-body https://ooxx.be/js/jegotrip.js
+https?:\/\/task\.jegotrip\.com\.cn\:8080\/app\/tasks\?userid url script-response-body https://ooxx.be/js/jegotrip.js
+
+
+# NobyDa
+
+# > 京东
+# 浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历
+https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# > 爱奇艺
+# 打开App,访问下右下角 `我的
+^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+
+# Chavyleung
+
+# > 网易云音乐
+# 1.先登录: <https://music.163.com/m/login>
+# 2.再访问: <https://music.163.com/#/user/level>
+# 3.提示: `获取会话: 成功!`
+^https:\/\/music.163.com\/weapi\/user\/level url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.cookie.js
+
+# > V2EX
+# 浏览器打开https://www.v2ex.com/mission/daily ，待弹出获取成功即可
+^https:\/\/www\.v2ex\.com\/mission\/daily url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/quanx/v2ex.cookie.js
+
+# > 彩云天气
+#  打开手机设置 > 隐私 > 定位服务
+#  (1) 打开定位服务
+#  (2) 选择天气，设置允许天气访问位置信息，并允许使用精确位置。
+https://weather-data.apple.com url script-request-header https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
