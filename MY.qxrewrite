@@ -1,9 +1,0 @@
-# 该订阅适用于定时签到脚本的Cookie获取.集成:  无忧行
-
-hostname = app*.jegotrip.com.cn, task.jegotrip.com.cn
-
-# > 无忧行
-# 1.打开无忧行App, 通知成功写入「 AccountID | UserID | Mobile | Token 」.
-# 2.依次点击"我的" 👉 "任务中心". 通知成功写入「 TaskID 」.
-https?:\/\/app.*\.jegotrip\.com\.cn\/.*getUser\? url script-response-body https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip.js
-https?:\/\/task\.jegotrip\.com\.cn\:8080\/app\/tasks\?userid url script-response-body https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip.js
