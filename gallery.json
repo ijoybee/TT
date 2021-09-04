@@ -1,0 +1,9 @@
+{"name":"MY",
+  "task":[
+    {
+      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip.js, tag=无忧行, img-url=https://ooxx.be/js/icon/jegotrip.png, enabled=true",
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/MY.qxrewrite,tag=获取Cookie"
+    },
+  ],
+  "description":"Script Gallery"
+}
