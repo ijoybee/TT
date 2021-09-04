@@ -2,7 +2,7 @@
   "task":[
     {
       "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip.js, tag=无忧行, img-url=https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip.png, enabled=true",
-      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip.qxwrite,tag=获取Cookie"
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip.reqxwrite,tag=获取Cookie"
     },
   ],
   "description":"Script Gallery"
