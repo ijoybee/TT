@@ -1,7 +1,7 @@
 {"name":"MY",
   "task":[
     {
-      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/QuantumultX/master/task/jegotrip.js, tag=无忧行, img-url=https://raw.githubusercontent.com/ijoybee/QuantumultX/master/icon/wyx.png, enabled=true",
+      "config":"15 0 * * * https://raw.githubusercontent.com/id77/QuantumultX/master/task/jegotrip.js, tag=无忧行, img-url=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/wyx.png, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip.qxrewrite,tag=获取Cookie"
     },
     {
