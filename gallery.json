@@ -8,6 +8,10 @@
       "config":"15 0 * * * https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/youth.js, tag=中青看点, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true",
       "addons":"https://raw.githubusercontent.com/sngxmini/QuanX/master/rewrite/qx_rewite.txt, tag=sunert中青cookie获取,  update-interval=86400, opt-parser=false, enabled=false"
     },
+    {
+      "config":"35 11,16 * * * https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js, tag=腾讯自选股, enabled=true",
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/txstock.qxrewrite, tag=腾讯自选股cookie,  update-interval=86400, opt-parser=false, enabled=false"
+    },
   ],
   "description":"Script Gallery"
 }
