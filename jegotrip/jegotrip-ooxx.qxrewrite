@@ -1,6 +1,5 @@
 /*
 该订阅适用于定时签到脚本的Cookie获取.集成:  无忧行
-hostname= app.jegotrip.com.cn
 > 无忧行
 1.打开无忧行点击「 我的 」然后点击「 我的客服 」👉 通知成功写入「 accountid & mobile 」, 点击「 无忧币商城 」 👉 通知成功写入「 token & userid 」.
 2.上述步骤完成后, 通知「 Cookie完整 」, 则可使用此签到脚本.
@@ -8,5 +7,5 @@ hostname= app.jegotrip.com.cn
 ‼️‼️退出登录「 token 」即时失效, 因此添加多账号Cookie需删除APP重新下载, 再登录另一账号, 然后按照上述步骤重新获取.
 4.获取Cookie后, 请将Cookie脚本禁用并移除主机名, 以免产生不必要的MITM.
 */
-
+hostname= app.jegotrip.com.cn
 https?:\/\/app\.jegotrip\.com\.cn\/.*(call_phone|logonFree) url script-response-body https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-ooxx.js
