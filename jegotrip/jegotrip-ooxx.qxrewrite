@@ -9,4 +9,4 @@ hostname= app.jegotrip.com.cn
 ‼️‼️退出登录「 token 」即时失效, 因此添加多账号Cookie需删除APP重新下载, 再登录另一账号, 然后按照上述步骤重新获取.
 4.获取Cookie后, 请将Cookie脚本禁用并移除主机名, 以免产生不必要的MITM.
 
-https?:\/\/app\.jegotrip\.com\.cn\/.*(call_phone|logonFree) url script-response-body https://github.com/ijoybee/TT/blob/main/jegotrip/jegotrip-ooxx.js
+https?:\/\/app\.jegotrip\.com\.cn\/.*(call_phone|logonFree) url script-response-body https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-ooxx.js
