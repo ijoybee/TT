@@ -1,0 +1,68 @@
+{
+  "name": "中青看点定时任务订阅",
+  "desc": "无",
+  "date": "2021-08-05 20:32:08",
+  "author": "wu",
+  "resource": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_cron.json",
+  "list": [
+    {
+      "name": "文章视频",
+      "type": "cron",
+      "time": "15 2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_read.js"
+      }
+    },
+    {
+      "name": "看看赚",
+      "type": "cron",
+      "time": "35 10 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_kkz.js"
+      }
+    },
+    {
+     "name": "中青看看赚",
+      "type": "cron",
+      "time": "45 9 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_shareRead.js"
+      }
+    },
+    {
+      "name": "分享阅读",
+      "type": "cron",
+      "time": "45 10 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_share.js"
+      }
+    },
+    {
+      "name": "日常任务(PK)",
+      "type": "cron",
+      "time": "20 21 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_daily.js"
+      }
+    },
+    {
+      "name": "每日任务奖励",
+      "type": "cron",
+      "time": "15 22 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_reward.js"
+      }
+    }
+  ]
+}
