@@ -1,0 +1,27 @@
+{
+  "name": "zqkdFast重写订阅",
+  "author": "elecV2p",
+  "mitmhost": ["user.youth.cn"],
+  "rewrite": [
+    {
+      "match": "https://user.youth.cn/FastApi/NewTaskSimple/getTaskList",
+      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_read.js",
+      "enable": true
+    },
+    {
+      "match": "https://user.youth.cn/v1/Nameless/adlickstart",
+      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_kkz.js",
+      "enable": true
+    },
+    {
+      "match": "https://user.youth.cn/FastApi/Task/sign",
+      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_reward.js",
+      "enable": true
+    }, 
+    {
+      "match": "https://user.youth.cn/FastApi/CommonReward/toGetReward",
+      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_reward.js",
+      "enable": true
+    }
+  ]
+}
