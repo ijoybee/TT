@@ -1,12 +1,10 @@
 /*
  * @Author: AsVow
- * @LastMod: 2022-01-03 23:13:14
+ * @LastMod: 2022-01-20 20:43:14
  *
 无忧行签到脚本
 脚本兼容: QuantumultX, Surge4, Loon, Node.js
-⚠️更新说明:
-1.新增多账号、多平台通知、随机User-Agent及Node.js支持.
-2.为规避网页蜘蛛将敏感字符串转义为ASCII编码.
+⚠️更新说明: 移除失效活动.
 
 Cookie说明：分为四部分「 accountid｜mobile｜token｜userid 」
 1.打开无忧行点击「 我的 」然后点击「 我的客服 」👉 通知成功写入「 accountid & mobile 」, 点击「 无忧币商城 」 👉 通知成功写入「 token & userid 」.
@@ -130,13 +128,12 @@ function SetVariable () {
         _mobile_ = _mobile + star + mobile_;
         head = `=== 账号${(+i)+1}：${_mobile_} ===\n`;
         info += `\n${head}`;
+        headers['User-Agent'] = GetRandomUA();
         await QuerySign();
         if (invalid) {
           info += 'Token已失效‼️\n\n';
           continue;
         }
-        headers['User-Agent'] = GetRandomUA();
-        await QuerySign_Old();
         11 == mobile.length ? await QueryVideoTask() : info += '视频任务：+86号码专属‼️\n';
         await Total();
       } else {
@@ -222,7 +219,7 @@ function QuerySign() {
         }
       })
       .catch((err) => {
-        const error = '🆕签到状态获取失败⚠️';
+        const error = '签到状态获取失败⚠️';
         $.error(error + '\n' + err);
         $.notify($.name, '', `${head+error}请查看日志‼️`);
       })
@@ -248,73 +245,6 @@ function UserSign(headers) {
         data = resp.body;
         if (data.includes('成功')) {
           info += `签到成功：无忧币 +${rewardCoin}🎉\n`;
-        }
-      })
-      .catch((err) => {
-        const error = '🆕签到失败⚠️';
-        $.error(error + '\n' + err);
-        $.notify($.name, '', `${head+error}请查看日志‼️`);
-      })
-      .finally(() => {
-        resolve();
-      });
-  });
-}
-
-
-function QuerySign_Old() {
-  delete headers['Origin'];
-  const url = '\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u0074\u0061\u0073\u006b\u002e\u006a\u0065\u0067\u006f\u0074\u0072\u0069\u0070\u002e\u0063\u006f\u006d\u002e\u0063\u006e\u003a\u0038\u0030\u0038\u0030\u002f\u0061\u0070\u0070\u002f\u0074\u0061\u0073\u006b\u0073\u003f\u0075\u0073\u0065\u0072\u0069\u0064\u003d' + userid;
-  const request = {
-      url: url,
-      headers: headers
-  };
-  return new Promise(resolve => {
-    $.http.get(request)
-      .then(async (resp) => {
-        $.log(`\nQuerySign_Old body: \n${resp}`);
-        data = $.toObj(resp.body);
-        list = data.rtn.tasks['日常任务'][0];
-        status = list.triggerAction;
-        if (status == '已签到') {
-          info += info.match(mobile_ + '.*\n.*' + '失败') ? `` : `签到失败：今日已签到🍷‼️\n`;
-        } else {
-          coins = list.credits;
-          taskid = list.id;
-          await Checkin();
-        }
-      })
-      .catch((err) => {
-        const error = '签到状态获取失败⚠️';
-        $.error(error + '\n' + err);
-        $.notify($.name, '', `${head+error}请查看日志‼️`);
-      })
-      .finally(() => {
-        resolve();
-      });
-  });
-}
-
-
-function Checkin() {
-  const url = '\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u0074\u0061\u0073\u006b\u002e\u006a\u0065\u0067\u006f\u0074\u0072\u0069\u0070\u002e\u0063\u006f\u006d\u002e\u0063\u006e\u003a\u0038\u0030\u0038\u0030\u002f\u0061\u0070\u0070\u002f\u0073\u0069\u0067\u006e';
-  const body = `{
-      "userid":"${userid}",
-      "taskId":"${taskid}"
-  }`;
-  const request = {
-      url: url,
-      headers: headers,
-      body: body
-  };
-  return new Promise(resolve => {
-    $.http.post(request)
-      .then((resp) => {
-        $.log(`\nCheckin body: \n${resp}`);
-        data = resp.body;
-        if (data.includes('true')) {
-          reger = new RegExp(_mobile + '.*' + mobile_ + '.*\n.*' + rewardCoin,'gm');
-          info.match(reger) ? info = info.replace(reger,`${_mobile_} ===\n签到成功：无忧币 +${(+rewardCoin)+(+coins)}`) : info += `签到成功：无忧币 +${coins}🍷🎉\n`;
         }
       })
       .catch((err) => {
