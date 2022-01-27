@@ -17,7 +17,7 @@
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/txstock.qxrewrite, tag=腾讯自选股cookie,  update-interval=86400, opt-parser=false, enabled=false"
     },
     {
-      "config":"35 8 * * * https://raw.githubusercontent.com/ijoybee/TT/main/iQIYI.js, tag=爱奇艺签到, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Color/iQIYI.png, enabled=true",
+      "config":"35 8 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺签到, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Color/iQIYI.png, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/iQIYI.qxrewrite, tag=爱奇艺cookie,  update-interval=86400, opt-parser=false, enabled=false"
     },
   ],
