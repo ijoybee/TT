@@ -20,6 +20,10 @@
       "config":"35 8 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺签到, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Color/iQIYI.png, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/iQIYI.qxrewrite, tag=爱奇艺cookie,  update-interval=86400, opt-parser=false, enabled=false"
     },
+    {
+      "config":"15 0 * * * https://raw.githubusercontent.com/leafxcy/JavaScript/main/ksjsb.js, tag=快手极速版, enabled=true",
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/ksjsb.qxrewrite,tag=获取快手极速Cookie"
+    }
   ],
   "description":"Script Gallery"
 }
