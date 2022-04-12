@@ -23,6 +23,10 @@
     {
       "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/left_ksjsb.js, tag=快手极速版, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/ksjsb.qxrewrite,tag=获取快手极速Cookie"
+    },
+    {
+      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jrttjsb.js, tag=快手极速版, enabled=true",
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jrttjsb.qxrewrite,tag=获取快手极速Cookie"
     }
   ],
   "description":"Script Gallery"
