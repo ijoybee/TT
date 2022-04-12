@@ -1,0 +1,3 @@
+hostname = *.snssdk.com
+hostname = *.toutiaoapi.com
+luckycat\/lite\/v1\/task\/page_data url script-request-header https://raw.githubusercontent.com/ijoybee/TT/main/jrttjsb.js
