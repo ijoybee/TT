@@ -7,4 +7,4 @@
 #4.获取Cookie后, 请将Cookie脚本禁用并移除主机名, 以免产生不必要的MITM.
 
 hostname= app.jegotrip.com.cn
-https?:\/\/app\.jegotrip\.com\.cn\/.*(call_phone|logonFree) url script-response-body https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-ooxx.js
+https?:\/\/app\.jegotrip\.com\.cn\/.*(call_phone|logonFree) url script-response-body https://ooxx.be/js/jegotrip.js
