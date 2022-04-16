@@ -29,7 +29,7 @@
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jrttjsb.qxrewrite,tag=获取今日头条极速Cookie"
     },
     {
-      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-ooxx-delete-cookie, tag=无忧行删除cookie-ooxx, enabled=true",
+      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-ooxx-delete-cookie.js, tag=无忧行删除cookie-ooxx, enabled=true",
     }
     
   ],
