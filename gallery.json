@@ -5,7 +5,7 @@
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip.qxrewrite,tag=获取Cookie"
     },
     {
-      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-ooxx.js, tag=无忧行-ooxx, img-url=https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-trn.png, enabled=true",
+      "config":"0 9 * * * https://ooxx.be/js/jegotrip.js, tag=无忧行-ooxx, img-url=https://ooxx.be/own/icon/jegotrip.png, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-ooxx.qxrewrite,tag=获取Cookie"
     },
     {
