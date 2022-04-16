@@ -27,7 +27,11 @@
     {
       "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jrttjsb.js, tag=今日头条极速版, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jrttjsb.qxrewrite,tag=获取今日头条极速Cookie"
+    },
+    {
+      "config":"15 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/box/scripts/boxjs.revert.caches.js, tag=BoxJs - 抹掉缓存, enabled=true",
     }
+    
   ],
   "description":"Script Gallery"
 }
