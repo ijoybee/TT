@@ -1,3 +1,4 @@
 !(async () => {
-    $.delete('AsVow');
-}
+	$.delete('AsVow');
+
+})
