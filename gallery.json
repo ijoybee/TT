@@ -34,6 +34,10 @@
     {
       "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/youth.js, tag=中青极速版, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/youth.qxrewrite,tag=获取中青极速版Cookie"
+    },
+    {
+      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/youth_gain.js, tag=中青极速版-看看赚, enabled=true",
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/youth.qxrewrite,tag=获取中青极速版Cookie"
     }
     
   ],
