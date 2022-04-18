@@ -30,6 +30,10 @@
     },
     {
       "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-ooxx-deletecookie.js, tag=无忧行删除cookie-ooxx, enabled=true",
+    },
+    {
+      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/youth.js, tag=中青极速版, enabled=true",
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/youth.qxrewrite,tag=获取中青极速版Cookie"
     }
     
   ],
