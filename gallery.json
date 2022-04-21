@@ -6,7 +6,7 @@
     },
     {
       "config":"0 9 * * * https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/ooxx/jegotrip.js, tag=无忧行-ooxx, img-url=https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/jegotrip-trn.png, enabled=true",
-      "addons":"https://raw.githubusercontent.com/ijoybee/TT/blob/main/jegotrip/ooxx/jegotrip.qxrewrite,tag=获取Cookie"
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/jegotrip/ooxx/jegotrip.qxrewrite,tag=获取Cookie"
     },
     {
       "config":"15 0 * * * https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/youth.js, tag=中青看点, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true",
