@@ -42,11 +42,10 @@
     {
       "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/Youth_Read.js, tag=中青极速版-阅读, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/youthread.qxrewrite,tag=获取中青阅读Cookie"
-    }
-    ,
+    },
     {
-      "config":"15 0 * * * https://raw.githubusercontent.com/FengYun27/Sheep_Hair/main/dyjsb.js, tag=dyjsb, enabled=true",
-      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/dyjsb.qxrewrite,tag=dyjsbCookie"
+      "config": "*/8 * * * * https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js, tag=抖音极速版, img-url=https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/dyjsb.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/dy/dyjsb.conf, tag=抖音极速版, update-interval=86400, opt-parser=false, enabled=false"
     }
     
   ],
