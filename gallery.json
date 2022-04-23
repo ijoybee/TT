@@ -43,6 +43,11 @@
       "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/Youth_Read.js, tag=中青极速版-阅读, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/youthread.qxrewrite,tag=获取中青阅读Cookie"
     }
+    ,
+    {
+      "config":"15 0 * * * https://raw.githubusercontent.com/FengYun27/Sheep_Hair/main/dyjsb.js, tag=dyjsb, enabled=true",
+      "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/dyjsb.qxrewrite,tag=dyjsbCookie"
+    }
     
   ],
   "description":"Script Gallery"
