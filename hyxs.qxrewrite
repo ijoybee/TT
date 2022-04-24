@@ -1,0 +1,2 @@
+hostname = yezi.jiaaisi.cn
+https://yezi.jiaaisi.cn/users url script-request-header https://raw.githubusercontent.com/ijoybee/TT/main/hyxs.js
