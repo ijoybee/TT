@@ -16,7 +16,7 @@ let httpResult, httpReq, httpResp;
 
 let fengyun_dyjsb_stepcookie = ($.isNode() ? process.env.fengyun_dyjsb_stepcookie : $.getdata('fengyun_dyjsb_stepcookie')) || '';
 let fengyun_dyjsb_readcookie = ($.isNode() ? process.env.fengyun_dyjsb_readcookie : $.getdata('fengyun_dyjsb_readcookie')) || '';
-let fengyun_dyjsb_readkey = ($.isNode() ? process.env.fengyun_dyjsb_readkey : $.getdata('fengyun_dyjsb_readkey')) || '';
+let fengyun_dyjsb_keys = ($.isNode() ? process.env.fengyun_dyjsb_readkey : $.getdata('fengyun_dyjsb_readkey')) || '';
 let dyhost = 'api5-normal-c-lq.amemv.com';
 
 let userList = []
