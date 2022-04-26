@@ -6,20 +6,9 @@
   "repo": "https://ooxx.be/js",
   "apps": [
     {
-      "id": "umer",
-      "name": "优麦医生",
-      "keys": ["@UMER.CookieUM"],
-      "settings": [
-        {
-          "id": "@UMER.CookieUM",
-          "name": "UMER Token",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": ""
-        }
-      ],
+      "id": "ksjsb",
+      "name": "快手",
+      "keys": ["@ksjsb.ksjsbCookie"],
       "author": "@AsVow",
       "repo": "https://ooxx.be/js",
       "icons": ["https://ooxx.be/js/icon/umer-trn.png", "https://ooxx.be/js/icon/umer.png"],
