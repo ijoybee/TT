@@ -1,4 +1,3 @@
-hostname = api.kuaisho*.com,api.kwaizt.com
+hostname = api.kuaisho*.com
 appsupport/yoda/biz/info url script-request-header https://github.com/ijoybee/TT/blob/main/left_ksjsb.js
 ksapp/client/package/renew url script-request-header https://github.com/ijoybee/TT/blob/main/left_ksjsb.js
-api.kwaizt.com/rest/zt/appsupport/yoda/biz/info url script-request-header https://github.com/ijoybee/TT/blob/main/left_ksjsb.js
