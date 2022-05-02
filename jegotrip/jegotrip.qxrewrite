@@ -1,7 +1,5 @@
-# 该订阅适用于定时签到脚本的Cookie获取.集成:  无忧行
-
-hostname= app*.jegotrip.com.cn, task.jegotrip.com.cn, *.easemob.com
-
+hostname= -app3.jegotrip.com.cn, app*.jegotrip.com.cn, task.jegotrip.com.cn, *.easemob.com
+# 获取无忧行Cookie
 https?:\/\/app.*\.jegotrip\.com\.cn\/.*getUser url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/task/jegotrip.cookie.js
 https?:\/\/task\.jegotrip\.com\.cn\:8080\/app\/tasks\?userid url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/task/jegotrip.cookie.js
 https:\/\/.+\.easemob\.com(\:443)?\/\d+\/jegotrip\/users\/ url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/task/jegotrip.cookie.js
