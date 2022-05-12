@@ -21,7 +21,7 @@
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/iQIYI.qxrewrite, tag=爱奇艺cookie,  update-interval=86400, opt-parser=false, enabled=false"
     },
     {
-      "config":"15 0 * * * https://raw.githubusercontent.com/ijoybee/TT/main/m_ksjsb.js, tag=快手极速版, enabled=true",
+      "config":"15 7-9,12-14,18-20 * * * https://raw.githubusercontent.com/HarbourJ/Temp/main/ksjsb_0511.js, tag=快手极速版, enabled=true",
       "addons":"https://raw.githubusercontent.com/ijoybee/TT/main/ksjsb.qxrewrite,tag=获取快手极速Cookie"
     },
     {
